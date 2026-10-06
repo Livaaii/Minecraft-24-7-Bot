@@ -5,7 +5,7 @@ function createBot() {
         host: 'virgogalacticosmod.aternos.me',
         port: 54943,
         username: 'Bot_NPC_247',
-        version: false
+        version: 1.20.1
     });
 
     bot.on('login', () => {
