@@ -2,7 +2,7 @@ const mineflayer = require('mineflayer');
 
 function createBot() {
     const bot = mineflayer.createBot({
-        host: 'virgogalacticosmod', // <--- REEMPLAZA ESTO POR LA IP DE TU SERVER
+        host: 'virgogalacticosmod.aternos.me', // <--- REEMPLAZA ESTO POR LA IP DE TU SERVER
         port: 54943,                // Puerto predeterminado de Minecraft
         username: 'Bot_NPC_247',    // Nombre genérico del bot/NPC dentro del juego
         version: false              // Autodetecta la versión exacta del servidor (1.8 a 1.21+)
