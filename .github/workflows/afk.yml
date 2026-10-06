@@ -3,7 +3,7 @@ name: Minecraft NPC Bot 24/7
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: # Permite encender el NPC de forma manual desde el panel web
+  workflow_dispatch:
 
 jobs:
   run-bot:
@@ -19,6 +19,11 @@ jobs:
 
     - name: Instalar dependencias de Mineflayer
       run: npm install mineflayer
+
+    - name: Comprobar DNS del servidor
+      run: |
+        getent hosts virgogalacticosmod.aternos.me
+        nslookup virgogalacticosmod.aternos.me
 
     - name: Ejecutar script del NPC
       run: node bot.js
